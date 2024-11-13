@@ -27,7 +27,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: ${{ secrets.AzureAppService_ContainerUsername_a709ce38f42746eca69279a7a3f98809 }}/github_microservice:${{ github.sha }}
+        tags: birklauritzen@gmail.com/github_microservice:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
